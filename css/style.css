@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+
+/* Main Roles Started */
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+/* Main Roles Ended */
+
+/* Header Started */
+
+header{
+    width: 90%;
+    margin: 20px 20px 80px 60px;
+}
+
+header span{
+    display: block;
+    margin: -38px 0 10px 70px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: default;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    margin: -50px -10px 0 0;
+}
+
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover{
+    color:#fb0808;
+    font-weight: bold;
+}
+
+/* Header Ended */
+
+/* form Started */
+
+#form-title{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#form{
+    margin-bottom: 110px;
+}
+
+#form #email{
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    font-size: 13px;
+}
+
+#form #submit{
+    width: 15%;
+    padding: 5px 8px;
+    font-size: 18px;
+    background: #e0dd01;
+    border: 1px solid #e0dd01;
+    cursor: pointer;
+}
+
+#form-title,
+#form{
+    text-align: center;
+}
+
+/* form Ended */
+
+/* features Started */
+
+#features{
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px 50px;
+}
+
+#features div{
+    margin-top: 15px;
+}
+
+#features .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#features p{
+    margin-top: -8px;
+}
+
+/* features ended */
+
+/* Iframe started */
+
+#video{
+    margin: 80px 0;
+    text-align: center;
+}
+
+/* Iframe Ended */
+
+/* Price Started */
+
+#price{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.card{
+    width: 30%;
+    text-align: center;
+    border: 1.5px solid #201e1e;
+}
+
+.card .title{
+    margin: 0;
+    padding: 15px 10px;
+    background: #f0f0f0;
+    font-size: 22px;
+} 
+
+.card .cash{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .about-price{
+    font-size: 15px;
+}
+
+.card button{
+    margin: 20px 0;
+    padding: 8px 14px;
+    color: #000000;
+    background: #e0dd01;
+    border: 1px solid #e0dd01;
+    cursor: pointer;
+}
+
+/* Price ended */
+
+/* Footer started */
+
+#footer{
+    width: 95%;
+}
+
+#footer ul{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+#footer ul li{
+    padding: 20px;
+    float: left;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#footer ul li a:hover{
+    color:#fb0808;
+    font-weight: bold;
+}
+
+#footer p{
+    float: right;
+    margin: 21px 0 50px;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#footer p a:hover{
+    color: #fb0808;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+/* Footer Ended */
+
+
+/* Media Query Started */
+
+@media (max-width: 900px) {
+    
+    /* Header Started */
+
+    header{
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    header span{
+        display: block;
+        margin: 5px 10px ;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: default;
+    }
+    
+    nav ul{
+        display: inline;
+        float: none;
+        margin: 30px 0;
+    }
+    
+    nav ul li{
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    /* Header Ended */
+
+    /* form Started */
+
+    #form-title{
+        font-size: 19px;
+        margin: 0 20px 20px;
+    }
+
+    #form #email{
+        width: 250px;
+        margin-bottom: 18px;
+    }
+
+    ::placeholder{
+        font-size: 12px;
+    }
+
+    #form #submit{
+        width: 80px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* form Ended */
+
+    /* features Started */
+
+    #features{
+        width: 65%;
+        display: block;
+        text-align: center;
+        margin-top: -35px;
+    }
+
+    #features img{
+        display: none;
+    }
+
+    #features div{
+        margin-bottom: 50px;
+    }
+
+    #features p{
+        margin-top: -8px;
+        text-align: justify;
+    }
+
+    #features .title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* features ended */
+
+    /* Price Started */
+
+    #price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+
+    .card{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card .title{
+        font-size: 20px;
+    } 
+
+    .card .cash{
+        font-size: 22px;
+    }
+
+    /* Price ended */
+
+    /* Footer started */
+
+    #footer{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #footer ul li{
+        float: none;
+        display: inline;
+        padding: 15px;
+    }
+
+    #footer p{
+        float: none;
+        margin-top: -30px;
+    }
+
+    /* Footer Ended */
+
+}
+
+@media (max-width: 600px) {
+    #video iframe{
+        width: 93%;
+    }
+    
+    #price{
+        width: 80%;
+        margin: 40px auto;
+    }
+    
+    .card{
+        width: 95%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #footer ul li{
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Media Query Ended */
